@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="homepage.css">
+<link rel="stylesheet" href="homepage.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#"> Services</a>
+        <a href="#">Projects</a>
+      
+        <a href="aboutme.html">About Me</a>   
+         <div class="dropdown">
+          <button class="dropbtn">Contact Us 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Enquiry.html">Enquiry</a>
+            <a href="service request.html">Service Request</a>
+            <a href="complance.html">Complaince</a>
+            <a href="call us .html">Call Me</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn"> COURSES
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content"> 
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">PYTHON</a>
+            <a href="#">Javascript</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">C</a>
+            <a href="#">C++</a>
+            <a href="#">Fashion</a>
+          </div>
+        </div>
+        <a href="login.html" class="split">Login</a>
+        <a href="SIGNUP.html" class="split">Sign-up</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+      </div>
+      <div class="slideshow-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="images/img08.jpg"></div>
+            <div class="swiper-slide"><img src="images/img09.jpg"></div>
+            <div class="swiper-slide"><img src="images/img11.jpg"></div>
+            <div class="swiper-slide"><img src="images/img2.jpg"></div>
+            <div class="swiper-slide"><img src="images/img010.jpg"></div>
+            ...
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+    <div class="navbar">
+        <p> &copy;Imo udoh(2022) </p>
+        <p>Connect with us </p>
+        <a href="https://web.facebook.com/talent.paul.18" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/imo-udoh-747347197" class="fa fa-linkedin"></a>
+        <a href="https://github.com/PerfectPearl" class="fa fa-github"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+  direction: 'vertical',
+  loop: true,
+
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="SIGNUP.css">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<form id="contact" action="" method="post">
+<h1>Registration Form</h1>
+<h3>Fill the form below to register for our trainings!</h3>
+<div class="row">
+<div class="column">                        
+<fieldset>
+<input type="text" placeholder="First Name *" name="name" required autofocus>
+</fieldset>
+<fieldset>
+    <input type="email" placeholder="Your email *" name="email" required autofocus>
+</fieldset>
+<fieldset>
+    <input type="text" placeholder="Date of birth *" name="date" onfocus="(this.type = 'date')" required autofocus>
+</fieldset>
+<fieldset>
+    <input type="text" placeholder="Phone number *" name="phone" id="phone" required autofocus>
+</fieldset>
+<fieldset>
+    <fieldset>
+        <p>What would you love to learn?</p>
+        <div class="checkbox">
+            <input type="checkbox" id="html" name="course" required>
+            <label for="html">HTML</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="css" name="course" required>
+            <label for="css">CSS</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="js" name="course" required>
+            <label for="js">JAVASCRIPT</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="python" name="course" required>
+            <label for="python">PYTHON</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="c++" name="course" required>
+            <label for="c++">C++</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="c" name="course" required>
+            <label for="c">C</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="fashion" name="course" required>
+            <label for="fashion">FASHION</label>
+        </div>
+    </fieldset>
+    <p>Upload your C.V</p>
+    <input type="file" id="file" required>
+</fieldset>
+</div>
+<div class="column">
+    <fieldset>
+        <input type="text" placeholder="Last Name *" name="Lname" required autofocus>
+        </fieldset>
+    <fieldset>
+        <p>What is your gender?</p>
+        <div class="radio">
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="female" name="gender" required>
+            <label for="female">Female</label>
+        </div>
+        <div class="radio">
+            <input type="radio" id="others" name="gender" required>
+            <label for="Others">Others</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <label for="idCard">Enter your ID Card in given formate.</label>
+        <div class="idCard">
+            <input type="text" name="idCard" pattern="[0-9]{5}" placeholder="#####" maxlength="5"> _
+            <input type="text" name="idCard" pattern="[0-9]{7}" placeholder="#######" maxlength="7"> _ 
+            <input type="text" name="idCard" pattern="[0-9]{1}" placeholder="#" maxlength="1">
+        </div>
+    </fieldset>
+   
+        <label for="favcolor"><p>Select your favorite color:</p></label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+       
+    <fieldset>
+        <p>Upload any I.D card</p>
+        <input type="file" id="file" required>
+    </fieldset>
+</div>
+</div>
+<fieldset>
+    <button type="submit" id="button">Submit Now</button>
+</fieldset>
+</form>
+</div>
+</body> 
+</html>
